@@ -1,0 +1,104 @@
+    .container{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 2.2em;
+  }
+  
+  .service__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: .5em;
+    width: 100%;
+    float: left;
+    color: #303030;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    transform: translateY(-50px);
+    opacity: 0;
+    animation-name: titleAnimation;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+    animation-duration: 5s;
+    animation-delay: 0.6s;
+  } 
+  .contents {
+    width: 100%;
+    float: left;
+    color: #303030;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    transform: translateY(-50px);
+    opacity: 0;
+    animation-name: titleAnimation;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+    animation-duration: 5s;
+    animation-delay: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+  
+    &:first-child{
+      animation-delay: 0.7s;
+    } 
+    &:last-child{
+      animation-delay: 0.5s;
+    }
+  }
+
+  
+  @keyframes titleAnimation {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    }
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+    80% {
+         transform: translateY(0);
+         opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+    100% {
+         transform: translateY(50px);
+         opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+        clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+      
+    }
+  }
+
+
+  .custom-shape-divider-bottom-1635122661 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1635122661 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 38px;
+}
+
+.custom-shape-divider-bottom-1635122661 .shape-fill {
+    fill: #FAFAFA;
+}
